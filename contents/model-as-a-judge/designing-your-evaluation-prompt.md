@@ -13,7 +13,7 @@ Some general guidelines I've come across online when designing the prompt itself
 - Specify the desired output format (adding fields will help consistency)
 	- `Your answer should be provided in JSON, with the following format {"Score": Your score, "Reasoning": The reasoning which led you to this score}`
 
-You can and should take inspiration from [MixEval](https://github.com/huggingface/lighteval/blob/main/src/lighteval/tasks/extended/mix_eval/judge_prompts.pyy) or [MTBench](https://github.com/huggingface/lighteval/blob/main/src/lighteval/tasks/extended/mt_bench/judge_prompt_templates.py) prompt templates.
+You can and should take inspiration from [MixEval](https://github.com/huggingface/lighteval/blob/main/src/lighteval/tasks/extended/mix_eval/judge_prompts.py) or [MTBench](https://github.com/huggingface/lighteval/blob/main/src/lighteval/tasks/extended/mt_bench/judge_prompt_templates.py) prompt templates.
 
 Other tidbits:
 - Pairwise comparison [correlates better with human preference](https://arxiv.org/abs/2403.16950) than scoring, and is more robust generally.
